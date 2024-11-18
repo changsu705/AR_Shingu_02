@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 415468680}
   - component: {fileID: 415468679}
   - component: {fileID: 415468678}
+  - component: {fileID: 415468683}
   m_Layer: 0
   m_Name: AR Session
   m_TagString: Untagged
@@ -154,8 +155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SerializedLibrary: {fileID: 0}
-  m_MaxNumberOfMovingImages: 0
+  m_SerializedLibrary: {fileID: 11400000, guid: 9e7336f0729592845af2686a5e1018dc, type: 2}
+  m_MaxNumberOfMovingImages: 4
   m_TrackedImagePrefab: {fileID: 0}
 --- !u!114 &415468679
 MonoBehaviour:
@@ -216,6 +217,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &415468683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415468677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726429b63753d3c49805b22cf0963175, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabs:
+  - {fileID: 1641129501591092180, guid: 14ea08db2ce646d4098d9c1f2464f5b3, type: 3}
+  - {fileID: 4336193717126316105, guid: 6634a9bc0b79e27428fe67ac46f6644b, type: 3}
+  - {fileID: 2608343376250425595, guid: 06ac52fb44c705a4796e23440e6ab1a8, type: 3}
+  - {fileID: 0}
 --- !u!1 &609945665
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,8 +523,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4966719baa26e4b0e8231a24d9bd491a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FocusMode: 1
-  m_LightEstimationMode: 0
+  m_FocusMode: -1
+  m_LightEstimationMode: -1
   m_AutoFocus: 1
   m_LightEstimation: 0
   m_FacingDirection: 1
