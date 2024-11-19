@@ -60,11 +60,7 @@ public class ImageToPrefabOn : MonoBehaviour
                 GameObject spawnedPrefab = Instantiate(prefabToSpawn, trackedImage.transform.position, trackedImage.transform.rotation);
                 spawnedPrefab.transform.parent = trackedImage.transform;
 
-                // PrefabClickHandler 추가 (여기서 URL은 PrefabClickHandler에서 관리됨)
-                PrefabClickHandler clickHandler = spawnedPrefab.AddComponent<PrefabClickHandler>();
-                clickHandler.youtubeURL = "https://www.youtube.com/watch?v=YOUR_VIDEO_ID"; // URL을 여기에 설정
-
-                spawnedPrefabs[trackedImage.referenceImage.name] = spawnedPrefab;
+                spawnedPrefabs[trackedImage.referenceImage.name] = spawnedPrefab; // 디셔너리에 저장 [유지보수 목적]
             }
         }
         else
